@@ -16,9 +16,9 @@ const setCurrency = (data) => ({type: INIT_CURRENCY, data})
 
 export const getCurrency = () => async (dispatch) => {
   try {
-    const {data: {USD_RUB, RUB_USD}} = await axios.get('https://free.currconv.com/api/v7/convert?apiKey=7f7168a5cd1f582bcdfe&q=USD_RUB, RUB_USD&compact=ultra')
-    const {data: {EUR_RUB, RUB_EUR}} = await axios.get('https://free.currconv.com/api/v7/convert?apiKey=7f7168a5cd1f582bcdfe&q=EUR_RUB, RUB_EUR&compact=ultra')
-    const {data: {USD_EUR, EUR_USD}} = await axios.get('https://free.currconv.com/api/v7/convert?apiKey=7f7168a5cd1f582bcdfe&q=USD_EUR, EUR_USD&compact=ultra')
+    const {data: {USD_RUB, RUB_USD}} = await axios.get('https://free.currconv.com/api/v7/convert?apiKey=7f7168a5cd1f582bcdfe&q=USD_RUB,RUB_USD&compact=ultra')
+    const {data: {EUR_RUB, RUB_EUR}} = await axios.get('https://free.currconv.com/api/v7/convert?apiKey=7f7168a5cd1f582bcdfe&q=EUR_RUB,RUB_EUR&compact=ultra')
+    const {data: {USD_EUR, EUR_USD}} = await axios.get('https://free.currconv.com/api/v7/convert?apiKey=7f7168a5cd1f582bcdfe&q=USD_EUR,EUR_USD&compact=ultra')
 
     //fixme: запрос на обновление через каждые 15 с нереально сделать, из-за того что у стороннего api есть ограниченное количество запросов в месяц
 

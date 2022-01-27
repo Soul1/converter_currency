@@ -16,7 +16,7 @@ function App() {
   const currency = useSelector(currencySelector)
   const [meConvert, setMeConvert] = useState('RUB')
   const [getCovert, setGetConvert] = useState('USD')
-
+  console.log(currency)
   const [meConvertCurrency, setMeConvertCurrency] = useState(1)
   const [getCovertCurrency, setGetConvertCurrency] = useState(1)
 
