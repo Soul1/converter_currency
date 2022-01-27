@@ -1,0 +1,66 @@
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-arrow {
+  margin-top: 60px;
+  cursor: pointer;
+}
+
+.circle-arrow,
+.convert:nth-child(1) {
+  margin-right: 30px;
+}
+
+.convert__btns {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.convert__btns-btn.active {
+  background-color: #00CD8A;
+  color: #fff;
+  border: 1px solid #00CD8A;
+}
+
+.convert__btns-btn {
+  padding: 10px 20px;
+  border: 1px solid #818181;
+  cursor: pointer;
+}
+
+.convert__btns-btn:hover {
+  background-color: #4ed4a8;
+  color: #fff;
+  border: 1px solid #4ed4a8;
+}
+
+.convert__input-label {
+  border: 1px solid #818181;
+  height: 120px;
+  position: relative;
+  display: block;
+}
+
+.convert__input-label input {
+  border: none;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+.convert__input-label input:focus-visible {
+  outline: none;
+}
+
+.convert__input-label__value {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  left: 20px;
+  color: #a9a6a6;
+  text-transform: uppercase;
+}
